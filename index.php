@@ -28,7 +28,7 @@
       }
       echo "Connected successfully";
 
-      $sql = "SELECT instructor_id, instructor_name, FROM Instructor";
+      $sql = "SELECT instructor_id, instructor_name FROM Instructor";
       $result = $conn->query($sql);
 
       if ($result->num_rows > 0) {
