@@ -42,7 +42,7 @@
                 <td><?echo $row["instructor_id"]?></td>
                 <td><?echo $row["instructor_name"]?></td>
                 <td>
-                  <form method="post" action="course-section.php">
+                  <form method="post" action="result.php">
                     <input type="hidden" name="id" value="<?=$row["instructor_id"]?>" />
                     <input type="submit" value="Sections" />
                   </form>
