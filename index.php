@@ -39,8 +39,8 @@
         while($row = $result->fetch_assoc()) {
         ?>
         <tr>
-            <td><?php$row["instructor_id"]?></td>
-            <td><?php$row["instructor_name"]?></td>
+            <td><?$row["instructor_id"]?></td>
+            <td><?$row["instructor_name"]?></td>
         </tr>
         <?php
         }
