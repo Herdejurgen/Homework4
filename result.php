@@ -10,11 +10,14 @@
   <body>
     <table class = "table">
     <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-      </tr>
-    </thead>
+    <tr>
+      <th>ID</th>
+      <th>Prefix</th>
+      <th>Number</th>
+      <th>Section</th>
+      <th>Instructor</th>
+    </tr>
+  </thead>
     <tbody>
         <?php
           $servername = "localhost";
@@ -41,13 +44,6 @@
             <tr>
                 <td><?echo $row["instructor_id"]?></td>
                 <td><?echo $row["instructor_name"]?></td>
-                <td>
-                  <form method="post" action="course-section.php">
-                    <input type="hidden" name="id" value="<? echo $row["instructor_id"]?>" />
-                    <input type="submit" value="Sections" />
-                  </form>
-                </td>
-                <td><a href="result.php?id=<?=$row["instructor_id"]?>"><?=$row["instructor_name"]?></a></td>
             </tr>
             <?php
             }
