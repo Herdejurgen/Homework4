@@ -17,9 +17,10 @@
       $servername = "localhost";
       $username = "Homework3";
       $password = "{k)#n$3fgsGn";
+      $dbname = "herdeju1_Homework3";
 
       // Create connection
-      $conn = new mysqli($servername, $username, $password);
+      $conn = new mysqli($servername, $username, $password, $dbname);
 
       // Check connection
       if ($conn->connect_error) {
