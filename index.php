@@ -13,6 +13,7 @@
       <tr>
         <th>ID</th>
         <th>Name</th>
+        <th>Sections</th>
       </tr>
     </thead>
     <tbody>
