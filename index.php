@@ -28,13 +28,13 @@
       }
       echo "Connected successfully";
 
-      $sql = "SELECT Instructor_ID, Instructor_Name, FROM Instructor";
+      $sql = "SELECT instructor_id, instructor_name, FROM Instructor";
       $result = $conn->query($sql);
 
       if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
-          echo "id: " . $row["Instructor_ID"]. " - Name: " . $row["Instructor_Name"]. "<br>";
+          echo "id: " . $row["instructor_id"]. " - Name: " . $row["instructor_name"]. "<br>";
         }
       } else {
         echo "0 results";
