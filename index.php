@@ -47,7 +47,6 @@
                     <input type="submit" value="Sections" />
                   </form>
                 </td>
-                <td><a href="result.php?id=<?=$row["instructor_id"]?>"><?=$row["instructor_name"]?></a></td>
             </tr>
             <?php
             }
