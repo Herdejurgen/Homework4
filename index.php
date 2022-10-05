@@ -15,7 +15,7 @@
       </tr>
     <?php
       $servername = "localhost";
-      $username = "Homework3";
+      $username = "herdeju1_homework3";
       $password = "{k)#n$3fgsGn";
       $dbname = "herdeju1_Homework3";
 
