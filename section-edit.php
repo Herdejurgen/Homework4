@@ -21,7 +21,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from section where section_id=?";
+$sql = "SELECT * from Section where section_id=?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $_POST['id']);
 $stmt->execute();
