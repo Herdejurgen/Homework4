@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           
 <?php
 $sql = "SELECT instructor_id, instructor_name from instructor";
-$result = $conn->query($sql);
+$result = $conn->get_result($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
