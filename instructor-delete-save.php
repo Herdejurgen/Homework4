@@ -21,7 +21,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "delete from instructor where instructor_id=?";
+$sql = "delete from Instructor where instructor_id=?";
 //echo $sql;
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $_POST['iid']);
