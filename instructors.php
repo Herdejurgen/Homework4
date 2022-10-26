@@ -84,7 +84,7 @@ if ($result->num_rows > 0) {
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <form method="post" action="">
+                      <form method="post" action="instructor-edit.php">
                         <div class="mb-3">
                           <label for="editInstructor<?=$row["instructor_id"]?>Name" class="form-label">Name</label>
                           <input type="text" class="form-control" id="editInstructor<?=$row["instructor_id"]?>Name" aria-describedby="editInstructor<?=$row["instructor_id"]?>Help" name="iName" value="<?=$row['instructor_name']?>">
@@ -100,7 +100,7 @@ if ($result->num_rows > 0) {
               </div>
             </td>
             <td>
-              <form method="post" action="">
+              <form method="post" action="instructor-delete.php">
                 <input type="hidden" name="iid" value="<?=$row["instructor_id"]?>" />
                 <input type="hidden" name="saveType" value="Delete">
                 <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
@@ -133,7 +133,7 @@ $conn->close();
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form method="post" action="">
+              <form method="post" action="instructor-add.php">
                 <div class="mb-3">
                   <label for="instructorName" class="form-label">Name</label>
                   <input type="text" class="form-control" id="instructorName" aria-describedby="nameHelp" name="iName">
